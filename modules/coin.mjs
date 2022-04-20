@@ -41,8 +41,12 @@ export function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
-
+export function coinFlips(flips) {
+  let flippedCoins = [];
+  for(let i=0; i<flips; i++) {
+    flippedCoins.push(coinFlip())
+  }
+  return flippedCoins
 }
 
 /** Count multiple flips
@@ -59,7 +63,14 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-
+  let head = 0;
+  let tail = 0;
+  for(let i=0; i < array.length; i++) {
+    if(array[i] == "heads") {
+      head++;
+    }
+    else tail++
+  }
 }
 
 /** Flip a coin!
