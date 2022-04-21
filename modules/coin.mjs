@@ -88,8 +88,15 @@ export function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
-
+export function flipACoin(call) {
+  let result = coinFlip()
+  if(result == call) {
+    let guess = 'win' 
+  }
+  else {
+    let guess = 'lose'
+  }
+  return {call: call, flip: result, result: guess}
 }
 
 
