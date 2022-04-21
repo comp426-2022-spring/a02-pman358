@@ -92,10 +92,10 @@ export function flipACoin(call) {
   let result = coinFlip()
   let guess = ' '
   if(result == call) {
-    let guess = 'win' 
+    guess = 'win' 
   }
   else {
-    let guess = 'lose'
+    guess = 'lose'
   }
   return {call: call, flip: result, result: guess}
 }
