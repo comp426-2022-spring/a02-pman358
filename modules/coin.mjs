@@ -74,7 +74,7 @@ export function countFlips(array) {
     }
     else {tail++;}
   }
-  return
+  return {heads: head, tails: tail}
 }
 
 /** Flip a coin!
