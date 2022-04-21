@@ -95,7 +95,7 @@ export function flipACoin(call) {
     guess = 'win' 
   }
   else {
-    guess = 'lose'
+    guess = 'lose' 
   }
   return {call: call, flip: result, result: guess}
 }
