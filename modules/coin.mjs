@@ -43,7 +43,7 @@ export function coinFlip() {
 
 export function coinFlips(flips) {
   let flippedCoins = [];
-  if(flips < 1 || typeof flips == "undefined"){
+  if(flips < 1 || typeof flips == 'undefined'){
     flips = 1
   }
   for(let i=0; i<flips; i++) {
