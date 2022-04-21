@@ -90,6 +90,7 @@ export function countFlips(array) {
 
 export function flipACoin(call) {
   let result = coinFlip()
+  let guess = ' '
   if(result == call) {
     let guess = 'win' 
   }
